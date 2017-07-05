@@ -1,0 +1,96 @@
+body {
+	margin: 0;
+	font-family: 'PT Sans', sans-serif;
+}
+
+.container {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+.clearfix {
+	overflow: auto;
+}
+
+
+/*navbar style*/
+
+.nav {
+	background-color: white;
+}
+
+.nav__logo {
+	width: 50%;
+	float: left;
+	text-transform: uppercase;
+	margin-top: 10px;
+}
+
+.nav__logo h1 {
+	text-decoration: none;
+	margin: 0;
+}
+
+.nav__logo a {
+	text-decoration: none;
+	color: lightskyblue;
+}
+
+.nav__logo p {
+	margin: 0;
+}
+
+.nav__menu {
+	width: 50%;
+	float: right;
+}
+
+.nav__menu-list {
+	float: right;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.nav__menu-item {
+	display: inline-block;
+}
+
+.nav__menu a {
+	text-decoration: none;
+	display: block;
+	padding: 25px 15px;
+}
+
+.nav__menu a:hover {
+	color: lightskyblue;
+}
+
+.nav__menu-list ul {
+	position: absolute;
+	background: #fff;
+	padding: 0;
+	top: 55px;
+	display: none;
+}
+
+.nav__menu-list li:hover ul {
+	display: block;
+}
+
+.nav__menu-sub-item {
+	list-style-type: none;
+	margin: 0;
+	padding: 0 30px 0 15px;
+}
+
+.nav__menu-sub-item a {
+	padding: 0;
+}
+
+/*cover image style*/
+
+.cover-image {
+	background-image: url('cover.jpg') no-repeat center center fixed;
+	background-size: cover;
+}
