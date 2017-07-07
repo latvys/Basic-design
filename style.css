@@ -1,6 +1,11 @@
+html {
+	height: 100%;
+}
+
 body {
 	margin: 0;
 	font-family: 'PT Sans', sans-serif;
+	height: 100%;
 }
 
 .container {
@@ -16,7 +21,10 @@ body {
 /*navbar style*/
 
 .nav {
+	position: absolute;
 	background-color: white;
+	top: 0;
+	width: 100%;
 }
 
 .nav__logo {
@@ -60,6 +68,7 @@ body {
 	text-decoration: none;
 	display: block;
 	padding: 25px 15px;
+	transition: all 0.25s ease-in-out;
 }
 
 .nav__menu a:hover {
@@ -91,6 +100,38 @@ body {
 /*cover image style*/
 
 .cover-image {
-	background-image: url('cover.jpg') no-repeat center center fixed;
+	color: white;
+	height: 100%;
+	background: url('cover.jpg') no-repeat center center fixed;
 	background-size: cover;
+	overflow: auto;
+	text-align: center;
+}
+
+.cover-image__content {
+	position: relative;
+	bottom: -50%;
+	transform: translateY(-50%);
+}
+
+.cover-image__content button {
+	margin-top: 20px;
+	padding: 15px;
+	border: 2px solid white;
+	background-color: Transparent;
+	transition: all 0.25s ease-in-out;
+}
+
+.cover-image__content a {
+	text-decoration: none;
+	color: white;
+	transition: all 0.25s ease-in-out;
+}
+
+.cover-image__content button:hover {
+	border: 2px solid lightskyblue;
+}
+
+.cover-image__content button:hover a {
+	color: lightskyblue;
 }
